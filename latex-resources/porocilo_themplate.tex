@@ -1,0 +1,44 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{titling}
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {./(<>)/} }
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage[justification=centering]{caption}
+\renewcommand{\figurename}{Slika}
+\renewcommand{\tablename}{Tabela}
+\renewcommand*\contentsname{Kazalo}
+
+\pretitle{\begin{center}\placetitlepicture\large}
+\posttitle{\par\end{center}}
+\newcommand{\titlepicture}[2][]{%
+	\renewcommand\placetitlepicture{%
+		\includegraphics[#1]{#2}\par\medskip
+	}%
+}
+\newcommand{\placetitlepicture}{} 
+
+\titlepicture[width=5cm]{~/Documents/resources/latex-resources/fs.jpg}
+\author{\\ Žiga Perne(<>)}
+\title{\huge (<>)\\
+\Large (<>)\\}
+\date{(<>)}
+
+\begin{document}
+\begin{titlingpage}
+	\maketitle
+\end{titlingpage}
+\pagebreak
+\begin{titlingpage}
+	\tableofcontents
+\end{titlingpage}
+\pagebreak
+
+
+\section{(<>)}
+
+(<>)
+
+
+\end{document}
