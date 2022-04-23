@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Simple New Tab URL Options</title>
+    <script src="./options.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body class="options">
+    <h1>Simple New Tab URL Options</h1>
+    <p>
+        <label for="url">
+            New Tab URL: <input type="text" id="url" name="url" autofocus/>
+        </label>
+    </p>
+    <div id="permission_warning" style="display: none;">
+        <div class="warning_content">
+            <p class="message">If your URL is a local file then you will have to enable the "Allow access to file URLs" permission for this extension:</p>
+            <p><input type="button" value="Grant Permission" id="grant_permissions"></p>
+        </div>
+    </div>
+    <p>
+        <label for="light">
+            Enable Light Mode: <input type="checkbox" id="light" name="light">
+        </label>
+    </p>
+    <p>
+        <label for="sync">
+            Enable Chrome Sync: <input type="checkbox" id="sync" name="sync">
+        </label>
+    </p>
+    <hr>
+    <p>
+        <em>Please report any issues on this project's <a href="https://github.com/zach-adams/simple-new-tab-url">Github repo</a></em>
+    </p>
+    <p>
+        <code>
+            Version <span id="version"></span><br>
+            Icon "redo" by Mohamed Riyaz Ali <a href="https://thenounproject.com/term/redo/1175677/" target="_blank">from the Noun Project</a>
+        </code>
+    </p>
+</body>
+</html>
